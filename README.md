@@ -1,2 +1,2 @@
-# docker-terraria-server
-Docker Server for Terraria, TShock, and tModLoader
+# docker-tmodloader-server
+Docker Server for tModLoader
