@@ -6,7 +6,7 @@ ENV TMOD_VERSION=2022.07.58.8
 ENV TMOD_SHUTDOWN_MSG="Shutting down!"
 ENV TMOD_AUTOSAVE_INTERVAL="*/10 * * * *"
 
-RUN apk update && apk add --no-cache build curl unzip
+RUN apk update && apk add --no-cache curl unzip
 
 WORKDIR /terraria-server
 
