@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  app:
+    build:
+      context: ./app
+    image: terraria:tmodloader_TR1.4.3.6_v2022.07.58.4
+    container_name: terraria-tmodloader
+    restart: always
+    network_mode: bridge
+    environment:
+      TERRARIA_VERSION: 1436
+      TMOD_VERSION: 2022.07.58.8
+      TMOD_SHUTDOWN_MSG: "Server is shutting down!"
+      TMOD_AUTOSAVE_INTERVAL: "*/20 * * * *"
+      TZ: "America/New_York"
+      PUID: 1000
+      PGID: 60
+    ports:
+      - "7777:7777/tcp"
+      - "7878:7878/tcp"
+    volumes:
+      - ./app/modloader:/opt/terraria-home/ModLoader
+      - ./app/server:/opt/terraria
+      - /etc/localtime:/etc/localtime:ro
+    labels:
+      traefik.enable: "false"

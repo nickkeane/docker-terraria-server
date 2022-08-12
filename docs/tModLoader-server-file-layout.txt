@@ -1,0 +1,13 @@
+DedicatedServerUtils\Instructions.txt
+DedicatedServerUtils\Setup_tModLoaderServer.sh
+tModPorter\tModPorter.bat
+serverconfig.txt
+start-tModLoader.sh
+start-tModLoaderServer.sh
+
+- Mods
+{HOME}/.local/share/Terraria/ModLoader/Mods
+{HOME}/.local/share/Terraria/ModLoader/Mods/enabled.json
+
+- Worlds
+{HOME}/.local/share/Terraria/ModLoader/Worlds/*.wld

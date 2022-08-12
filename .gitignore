@@ -1,0 +1,23 @@
+############################
+# Standard Root GIT Ignore #
+# Author : Nicholas Keane  #
+# Created: 08/03/2022      #
+# Updated: 08/03/2022      #
+############################
+# Platform/Mac
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Toolkit/Node
+node_modules/
+dist/
+
+# Generic
+*.bak
+*.log
+
+# Project Specific
+##################

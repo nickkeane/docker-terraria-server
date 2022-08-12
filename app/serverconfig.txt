@@ -1,0 +1,32 @@
+# See wiki for details
+# https://terraria.gamepedia.com/Guide:Setting_up_a_Terraria_server#Making_a_configuration_file
+
+maxplayers=16
+worldname=World
+world=/terraria/ModLoader/Worlds/World.wld
+port=7777
+password=sdg1234
+motd=Please don’t cut the purple trees!
+worldpath=/terraria/ModLoader/Worlds
+autocreate=3
+difficulty=3
+#banlist=banlist.txt
+secure=1
+#priority=0
+#npcstream=60
+#language=en/US
+journeypermission_time_setfrozen=2
+journeypermission_time_setdawn=2
+journeypermission_time_setnoon=2
+journeypermission_time_setdusk=2
+journeypermission_time_setmidnight=2
+journeypermission_godmode=2
+journeypermission_wind_setstrength=2
+journeypermission_rain_setstrength=2
+journeypermission_time_setspeed=2
+journeypermission_rain_setfrozen=2
+journeypermission_wind_setfrozen=2
+journeypermission_increaseplacementrange=2
+journeypermission_setdifficulty=2
+journeypermission_biomespread_setfrozen=2
+journeypermission_setspawnrate=2

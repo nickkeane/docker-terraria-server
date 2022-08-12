@@ -1,0 +1,6 @@
+{VERSION}\
+{VERSION}\Linux
+{VERSION}\Linux\lib64
+{VERSION}\Linux\TerrariaServer
+{VERSION}\Linux\TerrariaServer.bin.x86_64
+{VERSION}\Linux\TerrariaServer.exe
