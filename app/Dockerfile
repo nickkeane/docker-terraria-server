@@ -44,7 +44,7 @@ COPY --from=server_files /terraria-server/ ./
 
 # Install tMod
 RUN steamcmd +force_install_dir /opt/tmod +login anonymous +app_update 1281930 +quit
-RUN set -i '1d' DedicatedServerUtils/Setup_tModLoaderServer.sh
+RUN sed -i '1d' DedicatedServerUtils/Setup_tModLoaderServer.sh
 
 WORKDIR /opt/terraria
 
