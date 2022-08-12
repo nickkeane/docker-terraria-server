@@ -3,7 +3,7 @@
 pipe=/tmp/tmod.out
 players=/tmp/tmod.players.out
 
-function shutdown() {
+shutdown() {
   # Post Shutdown Message and Shutdown Server Safely
   [ -n "$TMOD_SHUTDOWN_MSG" ] && tmod-send-cmd "say $TMOD_SHUTDOWN_MSG"
   tmod-send-cmd "exit"
