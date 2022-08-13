@@ -18,9 +18,9 @@ shutdown() {
 #server="/opt/terraria/tModLoaderServer.bin.x86_64" # TODO: Old, use tMod sh script instead
 server="/opt/terraria/start-tModLoaderServer.sh"
 
-if [ "$1" = "setup" ]; then
-  $server
-else
+#if [ "$1" = "setup" ]; then
+#  $server
+#else
   # Enable Signal Traps
   trap shutdown SIGTERM SIGINT
 
@@ -34,11 +34,12 @@ else
 
   # Fire up Server
   mkfifo $pipe
-  tmux new-session -d "$server -config serverconfig.txt | tee $pipe $players" &
-#  sleep 2 && tmod-send-cmd "y"
-#  sleep 2 && tmod-send-cmd "f"
-  sleep 60 && /usr/sbin/crond -d 8 &
+  $server -config serverconfig.txt
+  #tmux new-session -d "$server -config serverconfig.txt | tee $pipe $players" &
+  #sleep 2 && tmod-send-cmd "y"
+  #sleep 2 && tmod-send-cmd "f"
+#  sleep 60 && /usr/sbin/crond -d 8 &
   cat $pipe &
 
   wait ${!}
-fi
+#fi
